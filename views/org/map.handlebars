@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+<h1>Hotspots</h1>
+<div id="maps" style="height: 20%;"></div>
+
+ <script>
+  function initMap(){
+    let uluru = {lat: 30.055222805363755, lng: 31.361907460167984}
+    let map = new google.maps.Map(
+      document.getElementById('maps'),{zoom: 4, center:uluru}
+    );
+    let marker = new google.maps.Marker({position: uluru, map:map})
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARXLFWRiySwcGwQuaZfmXyIiaAWlSoX4o&callback=initMap"></script>
+
+</body>

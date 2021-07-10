@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/FreeComp/Downloads/Compressed/fontawesome-free-5.10.0-web_3/fontawesome-free-5.10.0-web/css/all.css">
+    <title> Life Savers</title>
+    <script>
+        function validateForm() {
+            let name = document.forms["add_form"]["org_name"].value;
+            let org_number = document.forms["add_form"]["org_number"].value;
+            let password = document.forms["add_form"]["password"].value;
+            let confPassword = document.forms["add_form"]["confPassword"].value;
+            let email = document.forms["add_form"]["email"].value;
+            console.log(name);
+            if (name == "" || org_number =="") {
+                if(password == "" || confPassword = ""){
+                    if(email ==""){
+                        alert("All fields must be filled out");
+                    }
+                }      
+            }
+        } 
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-md-between top-bar">
+                <div class="col-12 col-md-2 logo">
+                   <i class="fas fa-quote-right txt-orange"></i>LiFe SaVeRs
+                </div>
+                <div class="col-12 col-md-8">
+                    <nav>
+                        <ul class="d-flex justify-content-center justify-content-md-end">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="/admin/reports">Show reports</a></li>
+                            <li><a href="/logout">Log Out</a></li>
+                            
+                         
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+           <html><head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script><style>.register{
+    background: -webkit-linear-gradient(left, #af3135, #d94141);
+    margin-top: 3%;
+    padding: 3%;
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #423938;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-right{
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #cc0033;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #cc0033;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #cc0036;
+    border: 2px solid #cc0000;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #57494b;
+}
+</style>
+</head>
+<body>
+    <div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Gu0Pq5VvyxKBUuiiT02Tcem7_LrE6sw8xBmnVKaOhqOZeiwYMSET2tPSO8azTJtzAx8&amp;usqp=CAU" alt="">
+                        <h3>Minstry of health</h3>
+                        <p>Remember every day you can save life in danger</p>
+                      
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Add</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">View</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Add New Organization</h3>
+                            <form action="add_org" method="POST" id="add_org" name ="add_form" onsubmit="validateForm()">
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Orgnization Name *" name="org_name">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Orgnizaton Lisence *" name="org_number">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" name="password"> 
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirm Password *" name="confPassword">
+                                        </div>
+                                     
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder=" Email *" name="email">
+                                        </div>
+                                        <input type="submit" class="btnRegister" value="ADD">
+                                        {{#if err}}
+                                        <h6 style="color: #cc0000;">{{err}}*</h6>
+                                        {{else}}
+                                        <h6>you have to fill all fields</h6>
+                                        {{/if}}
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3 class="register-heading">View Organizations</h3>
+                                <div class="row register-form">
+                                    <script>
+                                    function display_org_data(){
+                                        var x; 
+                                        var flag;
+                                        flag = document.getElementById("org_data");
+                                        flag.style.display = "block";
+                                        var selected_org = document.getElementById("selected_org").value;
+                                        var selected_number = document.getElementById(selected_org).value;
+                                        document.getElementById("org_name").value = selected_org;
+                                        document.getElementById("org_number").value = selected_number;
+
+                                    }
+
+                                    </script>
+                                   
+                                  <select class="custom-select" id="selected_org">
+                                                <option selected="">Orgnization List</option>
+                                                {{#each orgs}}
+                                                <option value="{{name}}" onclick="display_org_data();">{{name}}</option>
+                                                <option id="{{name}}" value="{{org_number}}" hidden></option>
+                                                {{/each}}  
+                                                </select>
+
+<form id="org_data"  style="display: none;" action="del_org" method="POST">
+                                                <div class="form-group row">
+                                           <b>  <label for="staticEmail" class="col-sm-5 col-form-label"> Orgnization Name.</label></b>
+                                                 <div class="col-sm-10">
+                                                <input type="text" readonly="" class="form-control-plaintext" id="org_name" name="name">
+                                                 </div>
+                                                 </div>
+                                                  <div class="form-group row">
+                                                 
+                                                 </div>
+                                                  <div class="form-group row">
+                                           <b>  <label for="staticEmail" class="col-sm-10 col-form-label">Orgnization license Number.</label></b>
+                                                 <div class="col-sm-10">
+                                                <input type="text" readonly="" class="form-control-plaintext" id="org_number">
+                                                 </div>
+                                                 </div>
+                                            <input type="submit" class="btnRegister" onclick="myFunction()" value="Remove Orgnization">
+                                       
+                                       
+                                       
+                                         <script>
+                                                 function myFunction() {
+                                                  var txt;
+                                                   if (confirm("ARE YOU SURE YOU WANNA REMOVE ORGNIZATION?!")) {
+                                                   txt = " <strong>Organisation Deleted Successfully!</strong>";
+                                                      } else {
+                                                   txt = "You pressed Cancel!";
+                                                                                     }
+                                                 document.getElementById("demo").innerHTML = txt;
+                                                                                                             }  
+                                    </script>
+                                            </form>
+
+                                                
+                                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+</body>

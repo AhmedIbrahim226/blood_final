@@ -1,0 +1,119 @@
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/add.css">
+        <link rel="stylesheet" href="css2/task1.css">
+        <link rel="stylesheet" href="hotspots.css">
+        <link rel="stylesheet" type="text/css" href="file:///C:/Users/FreeComp/Downloads/Compressed/fontawesome-free-5.10.0-web_3/fontawesome-free-5.10.0-web/css/all.css">
+        <title> Life Savers</title>
+    </head>
+    <body>
+        <header>
+            <div class="overlay"></div>
+                <div class="container">
+                    <div class="row align-items-center justify-content-md-between top-bar">
+                        <div class="col-12 col-md-2 logo">
+                            <i class="fas fa-quote-right txt-orange"></i>LiFe SaVeRs
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <nav>
+                                <ul class="d-flex justify-content-center justify-content-md-end">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="/org">Donation Hostspots</a></li>
+                                    <li><a href="/">Log Out</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <section class="service" style="background-color: #313131;">
+                <div class="container register">
+                    <div class="row">
+                        <div class="col-md-3 register-left">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Gu0Pq5VvyxKBUuiiT02Tcem7_LrE6sw8xBmnVKaOhqOZeiwYMSET2tPSO8azTJtzAx8&amp;usqp=CAU" alt="">
+                            <h3>Current User</h3>
+                            <p>We are happy to help you</p>
+                        </div>
+                        <div class="col-md-9 register-right">
+                            <div class="box">
+                                <div class="box1" style="width: 100%;">
+                                <form action="addHotspot"  method="POST">
+            {{#if success}}
+                <h3>*{{success}}*</h3>
+            {{/if}}
+            {{#if err}}
+            <h3>*{{err}}*</h3>
+            {{/if}}
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="B">
+                            <div class="box">
+                                    <label for="male">Donation hotspot name</label>              
+                                        <input type="text" placeholder="Enter Donation hotspot name" name="name" id="reemail">
+                                    <label for="male">Longitude</label> 
+                                        <input type="text" placeholder="Enter Longitude" name="long"  id="reage">
+
+                                    <label for="male">Latitude</label> 
+                                        <input type="text" placeholder="Enter Latitude" name="lat"  id="reuname">
+                                    <br>
+                                    <div class="type">
+                                        <h3>Blood type</h3>
+
+                                    <label for="male">Most Needed Type</label><br>
+                                        <select id="type"  name="needs"><br>
+                                            <option value="A">+A</option>
+                                            <option value="A">-A</option>
+                                            <option value="B">+B</option>
+                                            <option value="A">-B</option>
+                                            <option value="AB">+AB</option>
+                                            <option value="A">-AB</option>
+                                            <option value="O+">+O</option>
+                                            <option value="O-">-O</option>
+                                        </select>
+                                        <br><br>
+
+                                    <label for="male">Most Available Type</label><br>
+                                        <select id="type"  name="available"><br>
+                                            <option value="A">+A</option>
+                                            <option value="A">-A</option>
+                                            <option value="B">+B</option>
+                                            <option value="A">-B</option>
+                                            <option value="AB">+AB</option>
+                                            <option value="A">-AB</option>
+                                            <option value="O+">+O</option>
+                                            <option value="O-">-O</option>
+                                        </select>
+                                        <br>
+                                        <br>
+                                    <label for="male">Most Available Type Amount</label>
+                                    <input type="text" name = "avamount" placeholder="Enter amount">
+                                    </div>
+
+                                    </div>
+                                    <input type="hidden" name="orgId" value="{{orgId}}">
+                                    <button type="submit">ADD Hotspot</button>
+                            
+                            </div>
+                            </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        
+                        </div>
+                    </div>
+                </section>
+            </header>
+            
+                <script src="jQuery/jquery-3.4.1.min.js"></script>
+                <script src="jQuery/noga.js"></script>
+                <script src="js/jquery.js"></script>
+                <script src="js/popper.js"></script>
+                <script src="js/bootstrap.js"></script>
+                <script src="js/main.js"></script>
+    </body>
+</html>

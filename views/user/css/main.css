@@ -1,0 +1,575 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    margin: 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.txt-center{
+    text-align: center;
+}
+.txt-black{
+    color: black;
+}
+.txt-white{
+    color: white;
+}
+.txt-orange {
+    color: #B31217;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+header {
+    background-image: url(../img/1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+   position: relative;
+    z-index: 0;
+}
+
+header .top-bar {
+    height: 70px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 28px;
+    color: #fff;
+    }
+
+     header .logo:hover{
+        transition: 3s;
+        transform: skew(50deg,15deg);
+         color: #B31217;
+
+        }
+
+header nav li {
+    list-style: none;
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 30px;
+    transition: .7s;
+    -
+    
+    webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+}
+
+header nav li:last-child {
+    padding-right: 0;
+}
+
+header nav li:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+}
+
+header nav li:hover a {
+    color: #B31217;
+}
+
+header .landing-txt {
+    height: calc(100vh - 70px);
+    width: 60%;
+}
+
+header .landing-txt h1 {
+    margin: 0;
+    font-size: 35px;
+    color: #fff;
+    
+}
+header .landing-txt h1:hover {
+    font-size: 40px;
+          transition: 3s;
+}
+
+header .landing-txt p {
+    color: #fff;
+    font-size: 23px;
+}
+
+header .landing-txt button {
+    background: #B31217;
+    border: 0;
+    outline: 0;
+    padding: 10px 12px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+header .landing-txt button:hover{
+       transition: 3s;
+      font-size: 20px;
+    color:black;
+        font-family: monospace;
+}
+
+.service h2 {
+    font-size: 22px;
+}
+.service h2:hover {
+    font-size: 25px;
+       transition: 3s;
+}
+
+.service p {
+    font-size: 20px;
+}
+
+.service .img-container {
+    padding: 20px;
+}
+
+.service button {
+    background: #B31217;
+    border: 0;
+    outline: 0;
+    padding: 10px 12px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.service button:hover{
+       transition: 3s;
+    font-size: 19px;
+    font-family: monospace;
+    color:black;
+}
+.companys{
+    position: relative;
+    z-index: 0;
+    background-image: url('../img/3.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+}
+.companys .container{
+    height: 80%;
+} 
+.companys .content{
+    height: inherit;
+    padding-top: 20px;
+}
+.companys .contnt{
+    height: 70px;
+}
+.companys .contnt h1{
+    margin-bottom: 0;
+    font-size: 42px;
+}
+.companys .contnt span{
+    font-size: 42px;
+}
+.icons{
+   height: 100%;
+    margin: auto;
+    padding-top: 100px;
+}
+.icon2 h4{
+    margin:3px auto;
+    
+}
+
+.icon2 i{
+    font-size: 40px;
+   margin-right: 20px;
+    }
+.icon2 p{
+  width: 350px;
+    font-size: 15px;
+    margin: 0;
+}
+.creative .container{
+    padding: 50px 0px;
+}
+.crco{
+    position: relative;
+    z-index: 0;
+        background-image: url(../img/1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+}
+.crco1{
+    position: relative;
+    z-index: 0;
+     background-image: url(../img/1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+.crco2 h1{
+    font-size: 40px;
+    font-family: sans-serif;
+    margin: 0;
+}
+.crco2 i{
+    margin: 5px auto;
+    padding: 5px;
+}
+.crco i{
+    margin: auto;
+    font-size: 65px;
+}
+
+.crco1 i{
+    margin: auto;
+    font-size: 65px;
+}
+.crco button {
+    background: #B31217;
+    border: 0;
+    outline: 0;
+    padding: 10px 12px ;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.crco1 button {
+    background:#B31217;
+    border: 0;
+    outline: 0;
+    padding: 10px 12px;
+    margin: auto;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.iiiiic{
+    height: 5vh;
+}
+.iiiiic i{
+    font-size: 20px;
+    color: black;
+}
+.two{
+    height: 70vh;
+    margin: auto;
+}
+
+.two p{
+    font-size: 17px;
+}
+.book{
+    position: relative;
+    z-index: 0;
+    height: 600px;
+    width: 100%;
+      background-image: url(../img/1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+.book h3{
+    font-size: 42px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.book p{  
+    
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+.case .container{
+  
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.case h1{
+    font-size: 42px;
+    font-family: sans-serif;
+    margin: auto;
+    margin-top: 40px;
+    display: block;
+    width: 100%;
+}
+.case p{
+    width: 60%;
+    margin: auto;
+    font-size: 17px;
+    margin-top: 25px;
+}
+.case-container{
+    width: 100%;
+   padding-top: 50px;
+}
+.d-img{
+    position: relative;
+    z-index: 0;
+    background-image: url('../img/small-pic-2.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+.d-img h3{
+    padding-top: 120px;
+    font-size: 20px;
+    margin: auto;
+    }
+.d-img p{
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.d-img button{
+    background-color:#B31217;
+    border: 0;
+    outline: 0;
+    padding: 10px 12px ;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    
+}
+.creative .container{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 30px;
+    
+}
+.creative input{
+    width: 85%;
+    height: 9%;
+    border-radius: 25%;
+
+}
+.creative .no{
+     width: 100%;
+    height: 10%;
+     font-family: sans-serif;
+    font-size: 17px;
+}
+.creative .no input{
+    width: 15%;
+    height: 50%;
+
+}
+.get{
+    width: 90%;
+}
+.get .container h1{
+    font-size: 42px;
+    color: black;
+}
+.lolo{
+    
+    font-family: sans-serif;
+    font-size: 40px;
+   
+}
+.lala{
+    display: inline-block;
+    font-size: 40px;
+    padding-right: 15px;
+    font-family:serif;
+}
+
+    .three{
+        
+        display: block;
+        width: 100%;
+        order:2;
+}  
+    
+.morre i{
+    font-size: 20px;
+    margin-right: 15px;
+}
+.par{
+    height: 200px;
+}
+.par h1{
+    font-size: 42px;
+    font-family: sans-serif;
+}
+.rr{
+    margin-bottom: 30px;
+}
+.get{
+     height: 100vh;
+    width: 100%;
+}
+.one{
+    position: relative;
+    z-index: 0;
+       background-image: url(../img/1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  height: 100vh;
+    
+}
+.moving h2{
+    font-size: 42px;
+    padding-left: 40px;
+}
+.collect .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.collect p{
+    padding-top: 170px;
+    padding-left: 20px;
+}
+.collect-con h1{
+    font-size: 42px;
+    font-family: sans-serif;
+}
+.collect-con .imge{
+    height: 200px;
+    position: relative;
+    z-index: 0;
+    background-image: url(../img/1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px auto;
+}
+.copy{
+    background-color: #B31217;
+    text-align: center;
+    color: white;
+}
+@media (max-width: 768px) {
+    header .landing-txt {
+        width: 100%;
+        text-align: center;
+    }
+    header .landing-txt button {
+        margin: auto;
+    }
+    .service {
+        text-align: center;
+    }
+    
+    .service button {
+        margin: auto;
+    }
+    .companys .contnt{
+        text-align: center;
+        width: 100%;
+    }
+    .icons{
+        padding-top: 150px;
+        width: 100%;
+    }
+    .icon2{
+        width: 100%;
+        padding-top: 5px;
+    }
+.companys .contnt h1{
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+}
+    .crco{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .crco1{
+        font-size: 22px;}*/
+    .book{
+        height: 2000px;
+        flex-wrap: wrap;
+    }
+    .book .pics{
+        flex-wrap: wrap;
+    }
+.book img{
+        width:25%;
+        height: 70px;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    
+    .book h3{
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.book p{
+    font-size: 11px;
+    margin-bottom: 30px;
+}
+   
+}
