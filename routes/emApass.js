@@ -5,15 +5,14 @@ const admin = require("firebase-admin");
 
 
 router.get("/", (req, res ) => {
+    var user = firebase.auth().currentUser;
+    firebase.firestore().collection('users').doc(user.uid).get().then(query => {
+        var name = query.data().name;
+        res.render('emailApass', {em: user.email, name: name});
 
-    firebase.auth().onAuthStateChanged(userCredntial => {
-        const user = firebase.auth().currentUser;
-        admin.auth().getUser(userCredntial.uid).then((userRecord) => {
-            const em = userRecord.email;
-            res.render('emailApass', {em: em});
-            console.log("lastemail", user.email)
-        });
-    });
+    })
+
+    console.log("lastemail", user.email)
 })
 
 

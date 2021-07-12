@@ -6,8 +6,12 @@ const firebase = require('firebase');
 
 
 router.get("/", (req, res) => {
-        res.render('hotspots',{uid:session.uid});
-    
+  var user = firebase.auth().currentUser;
+  firebase.firestore().collection('users').doc(user.uid).get().then(query => {
+    var name = query.data().name;
+    res.render('hotspots',{uid:session.uid, name: name});
+
+  })    
 })
 
 router.post('/', (req, res) => {
